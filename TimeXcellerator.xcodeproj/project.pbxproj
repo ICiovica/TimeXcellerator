@@ -8,17 +8,37 @@
 
 /* Begin PBXBuildFile section */
 		AC9DF83E2B5931D3000BAFB5 /* TimeXcelleratorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DF83D2B5931D3000BAFB5 /* TimeXcelleratorApp.swift */; };
-		AC9DF8402B5931D3000BAFB5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DF83F2B5931D3000BAFB5 /* ContentView.swift */; };
+		AC9DF8402B5931D3000BAFB5 /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DF83F2B5931D3000BAFB5 /* TabsView.swift */; };
 		AC9DF8422B5931D5000BAFB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC9DF8412B5931D5000BAFB5 /* Assets.xcassets */; };
 		AC9DF8452B5931D5000BAFB5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC9DF8442B5931D5000BAFB5 /* Preview Assets.xcassets */; };
+		AC9DF8532B593578000BAFB5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DF8522B593578000BAFB5 /* HomeView.swift */; };
+		AC9DF8552B59358D000BAFB5 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DF8542B59358D000BAFB5 /* CalendarView.swift */; };
+		AC9DF8572B59359E000BAFB5 /* AlertsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DF8562B59359E000BAFB5 /* AlertsView.swift */; };
+		AC9DF8592B5935B9000BAFB5 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DF8582B5935B9000BAFB5 /* SettingsView.swift */; };
+		AC9DF85C2B5947ED000BAFB5 /* SettingsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DF85B2B5947ED000BAFB5 /* SettingsConstants.swift */; };
+		AC9DF85F2B5948C0000BAFB5 /* SettingsButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DF85E2B5948C0000BAFB5 /* SettingsButtonView.swift */; };
+		AC9DF8672B5949D4000BAFB5 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DF8662B5949D4000BAFB5 /* Images.swift */; };
+		AC9DF8692B594B1A000BAFB5 /* SettingsLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DF8682B594B1A000BAFB5 /* SettingsLinkView.swift */; };
+		AC9DF86C2B594B64000BAFB5 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DF86B2B594B64000BAFB5 /* String.swift */; };
+		AC9DF86E2B594E3A000BAFB5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC9DF86D2B594E3A000BAFB5 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AC9DF83A2B5931D3000BAFB5 /* TimeXcellerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeXcellerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC9DF83D2B5931D3000BAFB5 /* TimeXcelleratorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeXcelleratorApp.swift; sourceTree = "<group>"; };
-		AC9DF83F2B5931D3000BAFB5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AC9DF83F2B5931D3000BAFB5 /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
 		AC9DF8412B5931D5000BAFB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC9DF8442B5931D5000BAFB5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AC9DF8522B593578000BAFB5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		AC9DF8542B59358D000BAFB5 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		AC9DF8562B59359E000BAFB5 /* AlertsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsView.swift; sourceTree = "<group>"; };
+		AC9DF8582B5935B9000BAFB5 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		AC9DF85B2B5947ED000BAFB5 /* SettingsConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsConstants.swift; sourceTree = "<group>"; };
+		AC9DF85E2B5948C0000BAFB5 /* SettingsButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsButtonView.swift; sourceTree = "<group>"; };
+		AC9DF8662B5949D4000BAFB5 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		AC9DF8682B594B1A000BAFB5 /* SettingsLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLinkView.swift; sourceTree = "<group>"; };
+		AC9DF86B2B594B64000BAFB5 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		AC9DF86D2B594E3A000BAFB5 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +71,9 @@
 		AC9DF83C2B5931D3000BAFB5 /* TimeXcellerator */ = {
 			isa = PBXGroup;
 			children = (
-				AC9DF83D2B5931D3000BAFB5 /* TimeXcelleratorApp.swift */,
-				AC9DF83F2B5931D3000BAFB5 /* ContentView.swift */,
-				AC9DF8412B5931D5000BAFB5 /* Assets.xcassets */,
-				AC9DF8432B5931D5000BAFB5 /* Preview Content */,
+				AC9DF84B2B59338F000BAFB5 /* Application */,
+				AC9DF84C2B5933A7000BAFB5 /* Resources */,
+				AC9DF8642B5949B4000BAFB5 /* Utils */,
 			);
 			path = TimeXcellerator;
 			sourceTree = "<group>";
@@ -65,6 +84,113 @@
 				AC9DF8442B5931D5000BAFB5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AC9DF84B2B59338F000BAFB5 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				AC9DF83D2B5931D3000BAFB5 /* TimeXcelleratorApp.swift */,
+				AC9DF83F2B5931D3000BAFB5 /* TabsView.swift */,
+				AC9DF84D2B593532000BAFB5 /* Features */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		AC9DF84C2B5933A7000BAFB5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AC9DF8412B5931D5000BAFB5 /* Assets.xcassets */,
+				AC9DF8432B5931D5000BAFB5 /* Preview Content */,
+				AC9DF86D2B594E3A000BAFB5 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AC9DF84D2B593532000BAFB5 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				AC9DF84E2B593557000BAFB5 /* Home */,
+				AC9DF84F2B59355C000BAFB5 /* Calendar */,
+				AC9DF8502B593562000BAFB5 /* Alerts */,
+				AC9DF8512B593567000BAFB5 /* Settings */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		AC9DF84E2B593557000BAFB5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AC9DF8522B593578000BAFB5 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AC9DF84F2B59355C000BAFB5 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				AC9DF8542B59358D000BAFB5 /* CalendarView.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		AC9DF8502B593562000BAFB5 /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				AC9DF8562B59359E000BAFB5 /* AlertsView.swift */,
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
+		AC9DF8512B593567000BAFB5 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				AC9DF8582B5935B9000BAFB5 /* SettingsView.swift */,
+				AC9DF85D2B5948AE000BAFB5 /* View */,
+				AC9DF85A2B5947DC000BAFB5 /* Helpers */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		AC9DF85A2B5947DC000BAFB5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AC9DF85B2B5947ED000BAFB5 /* SettingsConstants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		AC9DF85D2B5948AE000BAFB5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC9DF85E2B5948C0000BAFB5 /* SettingsButtonView.swift */,
+				AC9DF8682B594B1A000BAFB5 /* SettingsLinkView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AC9DF8642B5949B4000BAFB5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AC9DF86A2B594B57000BAFB5 /* Extension */,
+				AC9DF8652B5949C9000BAFB5 /* Images */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		AC9DF8652B5949C9000BAFB5 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				AC9DF8662B5949D4000BAFB5 /* Images.swift */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		AC9DF86A2B594B57000BAFB5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AC9DF86B2B594B64000BAFB5 /* String.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC9DF8452B5931D5000BAFB5 /* Preview Assets.xcassets in Resources */,
+				AC9DF86E2B594E3A000BAFB5 /* Localizable.strings in Resources */,
 				AC9DF8422B5931D5000BAFB5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +264,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC9DF8402B5931D3000BAFB5 /* ContentView.swift in Sources */,
+				AC9DF8532B593578000BAFB5 /* HomeView.swift in Sources */,
+				AC9DF86C2B594B64000BAFB5 /* String.swift in Sources */,
+				AC9DF85C2B5947ED000BAFB5 /* SettingsConstants.swift in Sources */,
+				AC9DF8572B59359E000BAFB5 /* AlertsView.swift in Sources */,
+				AC9DF85F2B5948C0000BAFB5 /* SettingsButtonView.swift in Sources */,
+				AC9DF8672B5949D4000BAFB5 /* Images.swift in Sources */,
+				AC9DF8402B5931D3000BAFB5 /* TabsView.swift in Sources */,
+				AC9DF8592B5935B9000BAFB5 /* SettingsView.swift in Sources */,
+				AC9DF8692B594B1A000BAFB5 /* SettingsLinkView.swift in Sources */,
+				AC9DF8552B59358D000BAFB5 /* CalendarView.swift in Sources */,
 				AC9DF83E2B5931D3000BAFB5 /* TimeXcelleratorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,7 +333,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -254,7 +390,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -271,7 +407,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"TimeXcellerator/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TimeXcellerator/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 63XWRVA4JU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -280,6 +416,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -288,6 +425,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = CIC.TimeXcellerator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,7 +438,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"TimeXcellerator/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TimeXcellerator/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 63XWRVA4JU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -309,6 +447,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,6 +456,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = CIC.TimeXcellerator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

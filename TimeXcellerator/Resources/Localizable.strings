@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  TimeXcellerator
+
+  Created by IonutCiovica on 18/01/2024.
+  
+*/
+
+// MARK: - Settings Screen
+"settings_general" = "General";
+"settings_feedback" = "Send Feedback";
+"settings_recommend" = "Recommend to a Friend";
+"settings_review" = "Review in the App Store";
+"settings_share_message" = "Checkout TimeXcellerator on the App Store";
+
+"settings_privacy" = "Privacy";
+"settings_privacy_policy" = "Privacy Policy";
+"settings_terms_of_use" = "Terms of Use";
