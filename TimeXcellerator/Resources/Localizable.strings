@@ -16,3 +16,6 @@
 "settings_privacy" = "Privacy";
 "settings_privacy_policy" = "Privacy Policy";
 "settings_terms_of_use" = "Terms of Use";
+
+// MARK: - Calendar
+"calendar_header" = "Event Start Date";

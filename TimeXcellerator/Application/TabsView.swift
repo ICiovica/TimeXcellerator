@@ -60,11 +60,11 @@ struct TabsView: View {
                 }
                 .font(.system(.headline, design: .rounded, weight: .medium))
                 .tint(.blueApp)
+                .toolbarBackground(.visible, for: .tabBar)
+                .toolbarBackground(.visible, for: .navigationBar)
             }
             .navigationTitle(navigationTitle)
             .navigationBarTitleDisplayMode(.inline)
-            .toolbarBackground(.visible, for: .tabBar)
-            .toolbarBackground(.visible, for: .navigationBar)
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
                     toolbarImage

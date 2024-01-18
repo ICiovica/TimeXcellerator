@@ -8,9 +8,14 @@
 import SwiftUI
 
 struct AlertsView: View {
+    
     var body: some View {
         List {
-            
+            Section {
+                Text("Alerts")
+            } header: {
+                Text("Header")
+            }
         }
     }
 }

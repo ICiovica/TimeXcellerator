@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC3BE39E2B59A60E0085A4A1 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3BE39D2B59A60E0085A4A1 /* SearchView.swift */; };
 		AC9DF83E2B5931D3000BAFB5 /* TimeXcelleratorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DF83D2B5931D3000BAFB5 /* TimeXcelleratorApp.swift */; };
 		AC9DF8402B5931D3000BAFB5 /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DF83F2B5931D3000BAFB5 /* TabsView.swift */; };
 		AC9DF8422B5931D5000BAFB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC9DF8412B5931D5000BAFB5 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC3BE39D2B59A60E0085A4A1 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		AC9DF83A2B5931D3000BAFB5 /* TimeXcellerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeXcellerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC9DF83D2B5931D3000BAFB5 /* TimeXcelleratorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeXcelleratorApp.swift; sourceTree = "<group>"; };
 		AC9DF83F2B5931D3000BAFB5 /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
@@ -52,6 +54,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC3BE39C2B59A5FD0085A4A1 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				AC3BE39D2B59A60E0085A4A1 /* SearchView.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		AC9DF8312B5931D3000BAFB5 = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +122,7 @@
 				AC9DF84E2B593557000BAFB5 /* Home */,
 				AC9DF84F2B59355C000BAFB5 /* Calendar */,
 				AC9DF8502B593562000BAFB5 /* Alerts */,
+				AC3BE39C2B59A5FD0085A4A1 /* Search */,
 				AC9DF8512B593567000BAFB5 /* Settings */,
 			);
 			path = Features;
@@ -268,6 +279,7 @@
 				AC9DF86C2B594B64000BAFB5 /* String.swift in Sources */,
 				AC9DF85C2B5947ED000BAFB5 /* SettingsConstants.swift in Sources */,
 				AC9DF8572B59359E000BAFB5 /* AlertsView.swift in Sources */,
+				AC3BE39E2B59A60E0085A4A1 /* SearchView.swift in Sources */,
 				AC9DF85F2B5948C0000BAFB5 /* SettingsButtonView.swift in Sources */,
 				AC9DF8672B5949D4000BAFB5 /* Images.swift in Sources */,
 				AC9DF8402B5931D3000BAFB5 /* TabsView.swift in Sources */,

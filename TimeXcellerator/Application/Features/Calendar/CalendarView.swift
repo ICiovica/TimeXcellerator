@@ -11,15 +11,14 @@ struct CalendarView: View {
     @State private var date = Date()
     
     var body: some View {
-        List {
-            Section {
-                DatePicker("", selection: $date, displayedComponents: [.date])
-                    .datePickerStyle(.graphical)
-                    .tint(.redApp)
-            } header: {
-                Text("Event Start Date")
-            }
-            
+            List {
+                Section {
+                    DatePicker("", selection: $date, displayedComponents: [.date])
+                        .datePickerStyle(.graphical)
+                        .tint(.redApp)
+                } header: {
+                    Text("calendar_header".localized)
+                }
         }
     }
 }
