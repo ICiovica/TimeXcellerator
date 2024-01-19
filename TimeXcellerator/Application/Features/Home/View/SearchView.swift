@@ -10,35 +10,37 @@ import SwiftUI
 struct SearchView: View {
     @Environment(\.dismiss) var dismiss
     @State private var searchText = ""
-    let events = ["Eat", "Sleep", "Call", "Meet"]
     
-    var searchResults: [String] {
+    var searchEvents: [Event] {
         guard !searchText.isEmpty else { return [] }
-        return events.sorted().filter { $0.lowercased().contains(searchText.lowercased()) }
+        return Events.list.filter { $0.title.lowercased().contains(searchText.lowercased()) }
     }
     
     var body: some View {
         NavigationStack {
             List {
                 Section {
-                    ForEach(searchResults, id: \.self) { event in
+                    ForEach(searchEvents) { event in
                         NavigationLink {
-                            Text(event)
+                            VStack {
+                                Text(event.title)
+                                Text(event.description)
+                            }
                         } label: {
-                            Text(event)
+                            Text(event.title)
                         }
                     }
                 } header: {
-                    if !searchResults.isEmpty {
-                        Text("Events Found")
+                    if !searchEvents.isEmpty {
+                        Text("\(searchEvents.count > 1 ? "Events" : "Event") Found")
                     }
                 }
             }
             .scrollDisabled(true)
             .searchable(text: $searchText) {
-                if !searchResults.isEmpty {
-                    ForEach(searchResults, id: \.self) { result in
-                        Text("Are you looking for **\(result)** ?").searchCompletion(result)
+                if !searchEvents.isEmpty {
+                    ForEach(searchEvents) { event in
+                        Text("Are you looking for **\(event.title)** ?").searchCompletion(event.title)
                     }
                 }
             }

@@ -15,6 +15,7 @@ enum Tab {
 }
 
 struct TabsView: View {
+    @StateObject private var router = Router()
     @State private var selectedTab: Tab = .home
     @State private var shortFormatDate = ""
     @State private var fullFormatDate = ""
@@ -23,7 +24,7 @@ struct TabsView: View {
     private var navigationTitle: String {
         switch selectedTab {
         case .home:
-            fullFormatDate
+            "TimeXcellerator"
         case .calendar:
             "Calendar"
         case .alerts:
@@ -34,7 +35,7 @@ struct TabsView: View {
     }
     
     var body: some View {
-        NavigationStack {
+        NavigationStack(path: $router.path) {
             TabView(selection: $selectedTab) {
                 Group {
                     HomeView()
@@ -59,7 +60,7 @@ struct TabsView: View {
                         .tag(Tab.settings)
                 }
                 .font(.system(.headline, design: .rounded, weight: .medium))
-                .tint(.blueApp)
+                .tint(.black)
                 .toolbarBackground(.visible, for: .tabBar)
                 .toolbarBackground(.visible, for: .navigationBar)
             }
@@ -68,12 +69,10 @@ struct TabsView: View {
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
                     toolbarImage
-                        .foregroundStyle(.blueApp)
                 }
                 
                 ToolbarItem(placement: .topBarTrailing) {
                     toolbarImage
-                        .foregroundStyle(.blueApp)
                         .rotationEffect(.degrees(270))
                 }
             }
@@ -81,6 +80,13 @@ struct TabsView: View {
             .contentTransition(.symbolEffect(.replace))
             .onAppear {
                 getDate()
+            }
+            .environmentObject(router)
+            .navigationDestination(for: Router.Destination.self) { route in
+                switch route {
+                case .event(let event):
+                    EventView(event: event)
+                }
             }
         }
     }
@@ -117,4 +123,5 @@ private extension TabsView {
 
 #Preview {
     TabsView()
+        .environmentObject(Router())
 }
