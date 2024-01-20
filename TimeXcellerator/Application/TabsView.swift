@@ -60,10 +60,11 @@ struct TabsView: View {
                         .tag(Tab.settings)
                 }
                 .font(.system(.headline, design: .rounded, weight: .medium))
-                .tint(.black)
                 .toolbarBackground(.visible, for: .tabBar)
                 .toolbarBackground(.visible, for: .navigationBar)
+                .tint(.blueApp)
             }
+            .tint(.redApp)
             .navigationTitle(navigationTitle)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
@@ -76,18 +77,17 @@ struct TabsView: View {
                         .rotationEffect(.degrees(270))
                 }
             }
-            .tint(.redApp)
             .contentTransition(.symbolEffect(.replace))
             .onAppear {
                 getDate()
             }
-            .environmentObject(router)
             .navigationDestination(for: Router.Destination.self) { route in
                 switch route {
                 case .event(let event):
                     EventView(event: event)
                 }
             }
+            .environmentObject(router)
         }
     }
 }
@@ -114,9 +114,9 @@ private extension TabsView {
 private extension TabsView {
     var toolbarImage: some View {
         if isDaytime {
-            return SFImages.sun.toImage(frame: 24)
+            return SFImages.sun.toImage(frame: 24).foregroundStyle(.blueApp)
         } else {
-            return SFImages.moon.toImage(frame: 24)
+            return SFImages.moon.toImage(frame: 24).foregroundStyle(.blueApp)
         }
     }
 }

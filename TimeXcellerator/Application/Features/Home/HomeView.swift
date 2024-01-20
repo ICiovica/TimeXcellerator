@@ -39,7 +39,7 @@ struct HomeView: View {
                     searchTapped.toggle()
                 }
                 
-                DatePicker(isSameDay ? "Current Day:" : "Selected Day:", selection: $date, displayedComponents: [.date])
+                DatePicker(isSameDay ? "Today:" : "Selected Date:", selection: $date, displayedComponents: [.date])
                     .datePickerStyle(.automatic)
                     .tint(.redApp)
                 
@@ -47,6 +47,7 @@ struct HomeView: View {
             } header: {
                 Text("Explore")
             }
+            .listRowBackground(Color.white)
             
             Section {
                 VStack(alignment: .leading, spacing: 16) {
@@ -54,25 +55,21 @@ struct HomeView: View {
                         HStack(spacing: 16) {
                             Text(hour > 9 ? "\(hour):00" : "0\(hour):00")
                                 .frame(width: 50)
-                            Rectangle()
-                                .frame(height: 1)
-                                .foregroundStyle(.grayApp)
-                                .overlay {
-                                    if let event = filteredEvents.first(where: { $0.startTime == hour }) {
-                                        Button {
-                                            router.navigate(to: [.event(event)])
-                                        } label: {
-                                            EventLinkView(title: event.title)
-                                                .padding(.top, 36)
-                                        }
-                                    }
-                                }
+                            
+                            if let event = filteredEvents.first(where: { $0.startTime == hour }) {
+                                EventLinkView(title: event.title) { router.navigate(to: [.event(event)])}
+                            } else {
+                                Rectangle()
+                                    .frame(height: 1)
+                                    .foregroundStyle(.grayApp)
+                            }
                         }
                     }
                 }
             } header: {
                 Text("Events")
             }
+            .listRowBackground(Color.white)
         }
         .fullScreenCover(isPresented: $searchTapped) {
             SearchView()
@@ -98,6 +95,7 @@ struct HomeView: View {
 
 struct EventLinkView: View {
     let title: String
+    let action: () -> Void
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -110,7 +108,7 @@ struct EventLinkView: View {
         .padding(.vertical, 6)
         .background(.redApp)
         .cornerRadius(8)
-        .padding(.horizontal, 1)
+        .onTapGesture { action() }
     }
 }
 

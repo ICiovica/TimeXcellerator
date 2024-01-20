@@ -18,11 +18,9 @@ struct SettingsButtonView: View {
         } label: {
             HStack(spacing: 15) {
                 sfSymbol.toImage()
-                    .foregroundStyle(.redApp)
                 Text(text.localized)
                 Spacer()
                 SFImages.chevron.toImage()
-                    .foregroundStyle(.redApp)
             }
         }
         .listRowBackground(Color.white)
