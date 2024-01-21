@@ -30,6 +30,7 @@ enum SFImages: String {
     case laurelTrailing = "laurel.trailing"
     case sun = "sun.max.circle.fill"
     case moon = "moon.circle.fill"
+    case timer = "timer"
 }
 
 extension SFImages {

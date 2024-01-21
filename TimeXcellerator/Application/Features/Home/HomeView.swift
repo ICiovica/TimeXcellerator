@@ -50,13 +50,15 @@ struct HomeView: View {
             .listRowBackground(Color.white)
             
             Section {
-                VStack(alignment: .leading, spacing: 16) {
+                LazyVStack(alignment: .leading, spacing: 6) {
                     ForEach(hours, id: \.self) { hour in
                         HStack(spacing: 16) {
                             Text(hour > 9 ? "\(hour):00" : "0\(hour):00")
                                 .frame(width: 50)
                             
-                            if let event = filteredEvents.first(where: { $0.startTime == hour }) {
+                            if let events = filteredEventsByHour(hour), events.count > 1 {
+                                EventLinkView(title: "Multiple Events") { router.navigate(to: [.events(events)]) }
+                            } else if let event = filteredEventsByHour(hour)?.first {
                                 EventLinkView(title: event.title) { router.navigate(to: [.event(event)])}
                             } else {
                                 Rectangle()
@@ -64,6 +66,7 @@ struct HomeView: View {
                                     .foregroundStyle(.grayApp)
                             }
                         }
+                        .frame(height: 28)
                     }
                 }
             } header: {
@@ -86,6 +89,12 @@ struct HomeView: View {
         components1.month == components2.month &&
         components1.year == components2.year
     }
+    
+    func filteredEventsByHour(_ hour: Int) -> [Event]? {
+        let events = filteredEvents.filter({ $0.startTime == hour })
+        guard !events.isEmpty else { return nil }
+        return events
+    }
 }
 
 #Preview {
@@ -98,16 +107,16 @@ struct EventLinkView: View {
     let action: () -> Void
     
     var body: some View {
-        VStack(alignment: .leading) {
+        HStack(spacing: 0) {
+            SFImages.timer.toImage()
+                .padding(6)
             Text(title)
-                .font(.system(size: 16, weight: .semibold, design: .rounded))
-                .foregroundStyle(.white)
-            
+            Spacer()
+            SFImages.chevron.toImage()
         }
-        .frame(maxWidth: .infinity)
-        .padding(.vertical, 6)
-        .background(.redApp)
-        .cornerRadius(8)
+        .background(Color.redApp)
+        .foregroundStyle(.white)
+        .cornerRadius(6)
         .onTapGesture { action() }
     }
 }
@@ -123,4 +132,8 @@ struct EventView: View {
             Text(event.duration.description)
         }
     }
+}
+
+#Preview {
+    SettingsButtonView(sfSymbol: .chevron, text: "") {}
 }

@@ -17,6 +17,7 @@ final class Router: ObservableObject {
     
     enum Destination: Hashable {
         case event(Event)
+        case events([Event])
     }
     
     func navigateBack() {

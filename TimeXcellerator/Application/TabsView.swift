@@ -85,6 +85,12 @@ struct TabsView: View {
                 switch route {
                 case .event(let event):
                     EventView(event: event)
+                case .events(let events):
+                    List {
+                        ForEach(events) { event in
+                            EventLinkView(title: event.title) { router.navigate(to: [.event(event)])}
+                        }
+                    }
                 }
             }
             .environmentObject(router)
